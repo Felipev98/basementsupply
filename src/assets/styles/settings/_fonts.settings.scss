@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'BasementGrotesque';
+    src: url("../../assets/fonts/BasementGrotesque-Black_v1.202.otf") ;
+ }
+ @font-face {
+    font-family: 'DegarismStudio-AllianceNo';
+    src: url("../../assets/fonts/DegarismStudio-AllianceNo.1Light.otf") ;
+ }
+
+ $font-family-base: 'BasementGrotesque';
+ $font-family-base-light: 'DegarismStudio-AllianceNo';

@@ -1,14 +1,14 @@
 <template>
   <div id="nav">
-<h1>dojaodj</h1>
   </div>
   <router-view/>
 </template>
 
 <style lang="scss">
-@import 'assets/styles.scss';
+@import './assets/styles/settings/_colors.settings.scss';
 body{
-background-color: $primary_color;
+  background-color: $backgroundColor;
 }
+
 </style>>
 

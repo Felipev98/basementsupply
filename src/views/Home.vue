@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+
+    <h2>IJAIJSIA</h2>
+
   </div>
 </template>
 
