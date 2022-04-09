@@ -1,17 +1,16 @@
 <template>
   <div class="home">
-
-    <h2>IJAIJSIA</h2>
-
+<Basementtittle/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import Basementtittle from '../components/Home/Basementtittle'
 export default {
   name: 'Home',
   components: {
+    Basementtittle
   }
 }
 </script>
