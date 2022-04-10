@@ -1,0 +1,40 @@
+
+@import "../../../styles/objects/container.objects.scss";
+@import "../../../styles/objects/grid.objects.scss";
+@import "../../../styles/settings/fonts.settings.scss";
+@import "../../../styles/settings/colors.settings.scss";
+
+.marquee {
+    color: $primaryColor;
+    height: 5rem;
+    font-family:  $font-family-base;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    line-height: 5rem;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    position: relative;
+     top: -3rem;
+     overflow-x: hidden;
+     border-top: 2px solid $primaryColor;
+     border-bottom: 2px solid $primaryColor;  
+    transition: all 0.3s ease-in-out;
+  }
+  .marquee span {
+    padding-right: 18px;
+  }
+  
+  .marqueeScroll, .marqueeScroll2 {
+    height: 20px;
+    white-space: nowrap;
+    font-size: 35px;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 20s linear infinite;
+    position: absolute;
+  }
+  @keyframes marquee {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }

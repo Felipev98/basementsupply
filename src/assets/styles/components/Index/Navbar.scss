@@ -10,10 +10,35 @@ li a{
   color:$navbarColor;
   text-decoration: none;
   font-size: 1.5rem;
+  font-family: $font-family-base ;
+
+}
+.logo{
+  padding-left: 1rem;
 }
 .navbar{
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar-data {
+  display: flex;
+}
+.navbar-data img{
+  padding-right: 1rem;
+}
+.car{
+  color: #fff;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  width: 7%;
+  border: 2px solid #ffff;
+  border-radius: 1rem;
+  text-align: center;
   font-family: $font-family-base ;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.car span:last-child{
+  padding-left: 0.5rem;
 }

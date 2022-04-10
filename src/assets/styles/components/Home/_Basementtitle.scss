@@ -2,6 +2,7 @@
 @import "../../../styles/objects/container.objects.scss";
 @import "../../../styles/objects/grid.objects.scss";
 @import "../../../styles/settings/fonts.settings.scss";
+@import "../../../styles/settings/colors.settings.scss";
 
 h2{
     font-family:  $font-family-base;
@@ -13,7 +14,7 @@ h2{
 h3{
     font-family:  $font-family-base;
     font-size: 83px;
-    -webkit-text-stroke: 0.7px #ffff;
+    -webkit-text-stroke: 0.7px $primaryColor;
 }
 span{
     color: #ffff;

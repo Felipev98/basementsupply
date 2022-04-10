@@ -1,0 +1,49 @@
+@import "../../../styles/settings/colors.settings.scss";
+@import "../../../styles/objects/container.objects.scss";
+@import "../../../styles/objects/grid.objects.scss";
+@import "../../../styles/settings/fonts.settings.scss";
+h1{
+    font-size: 12.6rem;
+    color: #ffff;
+    font-family: $font-family-base;
+    margin-top: 2rem;
+}
+h3{
+    font-family:  $font-family-base;
+    font-size: 12.6rem;
+    -webkit-text-stroke: 0.7px $primaryColor;
+    text-align: center;
+}
+.left-bubble{
+    width: 0rem;
+    position: relative;
+    right: -1rem;
+    top:-8.5rem;
+}
+.right-bubble{
+    position: relative;
+    left: 74rem;
+    width: 0rem;
+    top:-10rem;
+}
+.left-vector {
+    width: 6rem;
+    position: relative;
+    top: -7rem;
+    left: 3rem;
+
+    img{
+        width:6rem;
+    }
+}
+.right-vector {
+    width: 6rem;
+    position: relative;
+    top: -14rem;
+    left: 76rem;
+    
+
+    img{
+        width: 6rem;
+    }
+}

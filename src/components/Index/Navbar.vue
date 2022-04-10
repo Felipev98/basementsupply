@@ -1,17 +1,21 @@
 <template>
-  <div class="container">
+  <div>
       <nav class="navbar">
-          <ul class="navbar-data">
-          <li><router-link to="/">{{link}}</router-link></li>
+      <div class="logo">
+      <li><router-link to="/">{{link}}</router-link></li>
+      </div>
+          <ul class="navbar-data">         
           <li><img :src="require(`@/assets/img/${icono1}`)"></li>
         <li><img :src="require(`@/assets/img/${icono2}`)"></li>
           <li><img :src="require(`@/assets/img/${icono3}`)"></li>
           <li><img :src="require(`@/assets/img/${icono4}`)"></li>
-            <li>
-                <span>Cart</span>
-                <span>0</span>
-            </li>
+          <li><img :src="require(`@/assets/img/${icono5}`)"></li>
           </ul>
+          <div class="car">
+           <span>Cart</span>
+            <span>(0)</span>
+          </div>
+         
       </nav>
   </div>
 </template>
@@ -25,6 +29,7 @@ data() {
         icono2:'1-2.png',
         icono3:'1-3.png',
         icono4:'1-4.png',
+        icono5:'1-5.png',
     }
 },
 }
