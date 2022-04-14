@@ -1,0 +1,20 @@
+@import "../../../styles/settings/colors.settings.scss";
+@import "../../../styles/objects/container.objects.scss";
+@import "../../../styles/objects/grid.objects.scss";
+@import "../../../styles/settings/fonts.settings.scss";
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+.texto h2{
+    font-size: 12.6rem;
+    font-family: "BasementGrotesque";
+}
+h3{
+    font-size: 12.6rem;
+    font-family: "BasementGrotesque";
+    -webkit-text-stroke: 0.7px $primaryColor;
+    padding-left: 5rem;
+}

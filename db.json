@@ -1,0 +1,7 @@
+{
+    "products": [
+      { "id": 1, "title": "Black t-shirt", "price": 7.85, "image":"https://res.cloudinary.com/yooo23/image/upload/v1649965184/remera_cogjcj.png" },
+      { "id": 2, "title": "Black hoodie", "price": 13,"image":"https://res.cloudinary.com/yooo23/image/upload/v1649965301/buzo_gxdnvd.png" },
+      { "id": 3, "title": "Black cap", "price": 23, "image":"https://res.cloudinary.com/yooo23/image/upload/v1649965370/BlackCap_poqabg.png" }
+    ]
+  }
