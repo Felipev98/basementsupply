@@ -32,7 +32,5 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/components/Index/Card.scss';
-span{
-    color: #ffff;
-}
+
 </style>

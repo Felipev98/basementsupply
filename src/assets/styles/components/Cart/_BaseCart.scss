@@ -1,0 +1,62 @@
+@import "../../../styles/objects/container.objects.scss";
+@import "../../../styles/objects/grid.objects.scss";
+@import "../../../styles/settings/fonts.settings.scss";
+@import "../../../styles/settings/colors.settings.scss";
+.modal-vue{
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-vue .modal {
+  position: relative;
+  width: 44rem;
+  z-index: 9999;
+  margin: 0 auto;
+  background-color: $backgroundColor;
+  border: 1px solid $primaryColor;
+}
+.modal-vue .overlay {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+.modal-title{
+    text-align: center;
+    font-family:  $font-family-base;
+
+
+    .title-1{
+        color: $primaryColor;
+        font-size: 6rem;
+    }
+    .title-2 {
+        -webkit-text-stroke: 0.7px $primaryColor ;
+            font-size: 6rem;
+    
+    }
+
+}
+.total{
+    padding: 1rem;
+    display: flex;
+    font-family:  $font-family-base;
+    justify-content: space-between;
+    border: 1px solid $primaryColor;
+    font-size: 1.5rem;
+
+    .total-price{
+        color: $primaryColor;
+        font-size: 1.5rem;
+    }
+    .checkout{
+        -webkit-text-stroke: 0.7px $primaryColor ;
+        cursor: pointer;
+
+    }
+}
+
+
+
