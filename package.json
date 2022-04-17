@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "axios": "^0.26.1",
@@ -17,10 +18,14 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.12",
     "@vue/cli-plugin-router": "~4.5.12",
+    "@vue/cli-plugin-unit-jest": "^4.5.17",
     "@vue/cli-plugin-vuex": "~4.5.12",
     "@vue/cli-service": "~4.5.12",
     "@vue/compiler-sfc": "^3.0.0",
+    "@vue/test-utils": "^2.0.0-0",
     "node-sass": "4.14.1",
-    "sass-loader": "10.1.1"
+    "sass-loader": "10.1.1",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0"
   }
 }

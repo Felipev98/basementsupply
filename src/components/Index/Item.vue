@@ -1,8 +1,10 @@
 <template>
 <section class="item">
  <div class="container">
-      <div class="row">
+      <div class="row" data-test="post" >
           <Card v-for="products in productss" :key="products.id" :products="products"/>
+            <button class="button">oksok</button>
+
       </div>
   </div>
 </section>
