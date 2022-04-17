@@ -1,6 +1,6 @@
 <template>
   <div>
-      <nav class="navbar">
+      <nav class="navbar" @close="closeModal">
       <div class="logo">
       <li><router-link to="/">{{link}}</router-link></li>
       </div>
@@ -13,15 +13,14 @@
           </ul>
           <div @click="openModal" class="car">
            <span>Cart</span>
-            <span>(0)</span>
+            <span>({{carTotalLength}})</span>
           </div>      
       </nav>
   </div>
-    <div class="modal" v-if="modal">
-           <BaseCart/>
+    <div class="modal"  v-if="modal">
+           <BaseCart @close="closeModal"/>
          </div>
 </template>
-
 <script>
 import BaseCart from '@/components/Cart/BaseCart.vue'
 export default {
@@ -34,16 +33,36 @@ data() {
         icono3:'1-3.png',
         icono4:'1-4.png',
         icono5:'1-5.png',
+        car:{
+        items:[]
+      }
     }
 },
 components:{
   BaseCart
 },
+beforeCreate() {
+    this.$store.commit('initializeStore')
+  },
+  computed:{
+    carTotalLength(){
+      let totalLength = 0
+      for (let i = 0; i < this.car.items.length; i++) {
+        totalLength += this.car.items[i].quantity        
+      }
+      return totalLength
+    }
+  },
+    mounted() {
+    this.car = this.$store.state.car
+  },
 methods:{
   openModal(){
     this.modal=true
   },
-  
+  closeModal(){
+    this.modal=false
+  }
 }
 
 }

@@ -13,6 +13,17 @@
   margin: 0 auto;
   background-color: $backgroundColor;
   border: 1px solid $primaryColor;
+  overflow-y: scroll;
+  height: 32rem;
+  
+  .close-button{
+      text-align: right;
+      color: $primaryColor;
+      font-family:  $font-family-base;
+    font-size: 1.4rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
 }
 .modal-vue .overlay {
   position: fixed;
@@ -40,7 +51,7 @@
 
 }
 .total{
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     font-family:  $font-family-base;
     justify-content: space-between;
@@ -54,6 +65,16 @@
     .checkout{
         -webkit-text-stroke: 0.7px $primaryColor ;
         cursor: pointer;
+        border-left:1px solid $primaryColor;
+        padding-left: 1rem;
+
+    }
+}
+.cart-message{
+    text-align: center;
+
+    h2{
+        font-family: $font-family-base;
 
     }
 }

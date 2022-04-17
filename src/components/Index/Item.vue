@@ -28,6 +28,7 @@ export default {
         async getProducts(){
             const products = await EventService.getProducts();
             this.productss = products.data;
+            
 }
         
     }

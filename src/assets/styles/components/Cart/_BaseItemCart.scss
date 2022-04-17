@@ -1,0 +1,62 @@
+@import "../../../styles/objects/container.objects.scss";
+@import "../../../styles/objects/grid.objects.scss";
+@import "../../../styles/settings/fonts.settings.scss";
+@import "../../../styles/settings/colors.settings.scss";
+
+.imagen img{
+    width: 14rem;
+}
+.card-cart{
+    border: 1px solid white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.cart-info h2{
+    font-size:2rem;
+    font-family: $font-family-base;
+}
+.cart-info span{
+    font-size: 1rem;
+    font-family: $font-family-base;
+    color: $cartInfoColor;
+}
+.imagen{
+    background: $backgroundItemColor;
+    width: 80%;
+}
+.cart-info-product{
+    color: $primaryColor;
+    font-family: $font-family-base;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.cart-info-product:last-child{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+    h3{
+        font-size: 1.4rem;
+        padding-right: 1rem;
+    }
+    .quantity-product{
+        padding: 0.5rem;
+        border: 1px solid whie;
+        border: 1px solid white;
+        border-radius: 17.5px;
+        width: 24%;
+        text-align: center;
+    }
+
+.increment-quantity{
+    cursor: pointer;
+}    
+.decrement-quantity{
+    cursor: pointer;
+}
+.item-total{
+    font-size: 1.4rem;
+}
+
