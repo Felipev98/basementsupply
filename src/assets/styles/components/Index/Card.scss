@@ -13,9 +13,7 @@
 .card-container img{
 width: 17rem;
 }
-// .card-container{
-//     width: 70%;
-// }
+
 .card-footer{
     display: flex;
     justify-content: space-between;
@@ -61,6 +59,16 @@ width: 17rem;
     margin-right: 1rem;
 }
 
+// Media Queries
+@media screen and (max-width:700px){
+
+    .row{
+        justify-content: center;
+    }
+    .card-container:nth-child(1){
+        margin-right: 0rem;
+    }
+}
 
 
 

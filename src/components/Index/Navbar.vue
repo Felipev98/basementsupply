@@ -70,10 +70,5 @@ methods:{
 
 <style lang="scss" scoped>
 @import '../../assets/styles/components/Index/Navbar.scss';
-.modal{
-  height: 30rem;
-  position: absolute;
-  width: 100%;
-}
 
 </style>

@@ -4,17 +4,21 @@
         <img src="../../assets/img/Footer.png" alt="">
     </div>
     <div class="texto">
-    <h2>WEAR</h2>
+    <h2>{{footer1}}</h2>
     </div>
 
 </div>
-    <h3>EVERYDAY</h3>
-
-
+    <h3>{{footer2}}</h3>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            footer1: "Wear",
+            footer2: "EVERYDAY"
+        }
+    },
 
 }
 </script>

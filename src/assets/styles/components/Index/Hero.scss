@@ -50,3 +50,29 @@ h3{
 .title{
     height: 40rem;
 }
+@media screen and (max-width:700px){
+    h1,h3  {
+        font-size: 3rem;
+    }
+    .right-vector{
+        left: 18rem;
+    }
+    .right-bubble{
+        left: 20rem;
+        top: -4rem;
+    }
+    .left-bubble{
+        right: -1rem;
+        top: -2.9rem;
+    }
+    .left-vector{
+        width: 5rem;
+    }
+    .marquee{
+        top: -1rem;
+    }
+    .title{
+        height: 11rem;
+        text-align: center;
+    }
+}

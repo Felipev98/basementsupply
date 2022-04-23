@@ -42,3 +42,16 @@ li a{
 .car span:last-child{
   padding-left: 0.5rem;
 }
+.modal{
+  height: 30rem;
+  position: absolute;
+  width: 100%;
+}
+@media screen and (max-width:700px){
+  .navbar-data{
+    display: none;
+  }
+  .car{
+    width: 22%;
+  }
+}
