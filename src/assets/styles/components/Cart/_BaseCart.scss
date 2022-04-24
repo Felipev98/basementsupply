@@ -79,5 +79,23 @@
     }
 }
 
+@media screen and (max-width:700px){
+    .modal-title .title-1{
+        font-size: 3rem;
+    }
+    .modal-title .title-2{
+        font-size: 3rem;
+        padding-left: 0.5rem;
+    }
+    .modal-vue .modal{
+        width: 100%;
+    }
+    .imagen img{
+        width: 100%;
+    }
+    .cart-info {
+        text-align: center;
+    }
+}
 
 

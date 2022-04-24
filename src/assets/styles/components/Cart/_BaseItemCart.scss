@@ -59,4 +59,21 @@
 .item-total{
     font-size: 1.4rem;
 }
+@media screen and (max-width:700px){
+    .imagen{
+        width: 100%;
+        text-align: center;
+    }
+    .col-6{
+        width: 100%;
+
+    }
+    .cart-info{
+        text-align: center;
+    }
+    .cart-info-product{
+        margin-top: 1rem;
+    }
+}
+
 

@@ -6,7 +6,7 @@
             <h3>{{subtitle}}</h3>
         </div>
         <div class="col-6">
-        <img :src="require(`@/assets/img/${img_src}`)"> 
+      <router-link to="/index" ><img :src="require(`@/assets/img/${img_src}`)"> </router-link>  
         </div>
     </div>
 <span>©basement.studio LLC. All rights reserved.</span>

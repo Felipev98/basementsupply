@@ -21,3 +21,10 @@ span{
     font-family:  $font-family-base-light;
 }
 
+@media screen and (max-width:700px){
+    .row{
+        margin-top: 15rem;
+        text-align: center;
+    }
+
+}
