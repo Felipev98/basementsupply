@@ -18,14 +18,22 @@ h3{
     -webkit-text-stroke: 0.7px $primaryColor;
     padding-left: 5rem;
 }
+img{
+    width: 26rem;
+}
 @media screen and (max-width:700px){
     .texto h2,h3  {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        text-align: right;
     }
-    h3{
-        padding-left: 6rem;
-    }
+
     .footer{
         margin-top: 4rem;
+    }
+    img{
+        width:8rem;
+    }
+    h3{
+        margin-top: -2rem;
     }
 }

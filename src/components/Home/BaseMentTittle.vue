@@ -8,8 +8,11 @@
         <div class="col-6">
       <router-link to="/index" ><img :src="require(`@/assets/img/${img_src}`)"> </router-link>  
         </div>
+        <div class="author">
+                  <span>©basement.studio LLC. All rights reserved.</span>
+
+        </div>
     </div>
-<span>©basement.studio LLC. All rights reserved.</span>
 </div>
 
 </template>

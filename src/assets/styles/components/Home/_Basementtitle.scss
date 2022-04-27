@@ -20,11 +20,46 @@ span{
     font-size: 1rem;
     font-family:  $font-family-base-light;
 }
+img{
+    animation: slidein 5s  infinite;
+}  
 
+@keyframes slidein {
+    25% {
+      -webkit-transform: translateY(-50px);
+  }
+  
+  50%,
+  100% {
+      -webkit-transform: translateY(20);
+  }
+  
+  75% {
+      -webkit-transform: translateY(50px);
+  }
+  }
 @media screen and (max-width:700px){
     .row{
-        margin-top: 15rem;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
         text-align: center;
+    }
+    .col-6{
+        width:100%;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    img{
+        width: 22rem;
+    }
+    .author{
+        width:100%;
+        margin-bottom: 1rem;
     }
 
 }

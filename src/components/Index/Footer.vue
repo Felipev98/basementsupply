@@ -1,7 +1,7 @@
 <template>
 <div class="footer">
     <div class="contenido">
-        <img src="../../assets/img/Footer.png" alt="">
+        <img src="../../assets/img/dibujo2.png" alt="">
     </div>
     <div class="texto">
     <h2>{{footer1}}</h2>
