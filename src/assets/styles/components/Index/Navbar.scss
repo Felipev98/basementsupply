@@ -47,7 +47,15 @@ li a{
   position: absolute;
   width: 100%;
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:1024px){
+  .navbar-data{
+    display: none;
+  }
+  .car{
+    width: 24%;
+  }
+}
+@media screen and (min-width:701px) and (max-width:1024px){
   .navbar-data{
     display: none;
   }

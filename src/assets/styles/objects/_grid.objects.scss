@@ -27,3 +27,9 @@
         margin: auto;
     }
 }
+@media screen and (min-width:701px) and (max-width:1024px){
+    .col-4{
+        width: 47.333333%;
+        margin-left: 1rem;
+    }
+}

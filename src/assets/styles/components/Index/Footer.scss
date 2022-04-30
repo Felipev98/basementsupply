@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     padding-right: 1rem;
+    margin-top: 6rem;
 }
 .texto h2{
     font-size: 12.6rem;
@@ -17,11 +18,14 @@ h3{
     font-family: "BasementGrotesque";
     -webkit-text-stroke: 0.7px $primaryColor;
     padding-left: 5rem;
+    text-align:right;
+
 }
 img{
     width: 26rem;
 }
-@media screen and (max-width:700px){
+
+@media screen and (max-width:1024px){
     .texto h2,h3  {
         font-size: 2.5rem;
         text-align: right;
@@ -36,4 +40,31 @@ img{
     h3{
         margin-top: -2rem;
     }
+}
+
+@media screen and (min-width:701px) and (max-width:1024px){
+    .texto h2,h3{
+        font-size: 6.5rem;
+    }
+    img{
+        width: 10rem;
+        margin-left: 7rem;
+    }
+}
+@media screen and (min-width:1500px) and (max-width:2000px){
+    .texto h2,h3{
+        font-size: 17.6rem;
+    }
+    img{
+        width: 35rem;
+    }
+}
+@media screen and (min-width:2001px) {
+    .texto h2,h3{
+        font-size: 19.6rem;
+    }
+    img{
+        width: 41rem;
+    }
+
 }

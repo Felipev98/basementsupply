@@ -7,6 +7,7 @@ h1{
     color: #ffff;
     font-family: $font-family-base;
     margin-top: 2rem;
+    text-align: center;
 }
 h3{
     font-family:  $font-family-base;
@@ -50,7 +51,7 @@ h3{
 .title{
     height: 40rem;
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:1024px){
     h1,h3  {
         font-size: 3rem;
     }
@@ -75,4 +76,51 @@ h3{
         height: 11rem;
         text-align: center;
     }
+}
+@media screen and (min-width:701px) and (max-width:1024px){
+    h1,h3  {
+        font-size: 6rem;
+    }
+    .left-bubble{
+        top: -5.9rem;
+    }
+    .right-bubble{
+        top:-7.7rem;
+        left: 78%;
+    }
+    .title{
+        height: 24rem;
+    }
+    .right-vector{
+        left: 40rem;
+    }
+}
+@media screen and (min-width:1500px) and (max-width:2000px){
+    .left-bubble{
+        right:-9% ;
+    }
+    .left-vector{
+        left: 12%;
+    }
+    .right-bubble{
+        left: 79%;
+    }
+    .right-vector{
+        left: 81%;
+    }
+}
+@media screen and (min-width:2001px) {
+    .left-bubble{
+        right: -19%;
+    }
+    .right-bubble{
+        left: 72%;
+    }
+    .left-vector{
+        left: 20%;
+    }
+    .right-vector{
+        left: 73%;
+    }
+
 }
