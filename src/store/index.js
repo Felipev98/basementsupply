@@ -5,7 +5,6 @@ export default createStore({
     car: {
       items: [],
   },
-  isLoading: false,
 
   },
   mutations: {
@@ -25,10 +24,7 @@ export default createStore({
       }
       localStorage.setItem('car', JSON.stringify(state.car))
     },
-    setIsLoading(state, status) {
-      state.isLoading = status
-    },
-    
+  
   },
   actions: {
   },

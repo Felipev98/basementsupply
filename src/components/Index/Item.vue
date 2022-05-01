@@ -1,7 +1,7 @@
 <template>
 <section class="item">
  <div class="container">
-     <div v-if="$store.state.isLoading" class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+     <div v-if="loading" class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
       <div class="row" >
           <Card v-for="products in productss" :key="products.id" :products="products" class="card"/>
       </div>
@@ -15,7 +15,8 @@ import EventService from '../../helpers/EventService'
 export default {
     data() {
         return {
-            productss: null
+            productss: null,
+            loading:false
         }
     },
     components:{
@@ -27,15 +28,15 @@ export default {
     },
     methods: {
         async getProducts(){
-            this.$store.commit('setIsLoading',true);
+            this.loading = true;
             try {
                     const products = await EventService.getProducts();
                     this.productss = products.data;
             } catch (error) {
                 
             }finally{
-            this.$store.commit('setIsLoading',false)
-            }         
+                this.loading = false;
+}         
 }
         
     }
