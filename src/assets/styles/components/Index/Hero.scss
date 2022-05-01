@@ -20,12 +20,16 @@ h3{
     position: relative;
     right: -1rem;
     top:-8.5rem;
+    -webkit-animation: blink 0.7s infinite;
+  animation: blink 3s infinite;
 }
 .right-bubble{
     position: relative;
     left: 74rem;
     width: 0rem;
     top:-10rem;
+    -webkit-animation: blink 0.7s infinite;
+  animation: blink 3s infinite;
 }
 .left-vector {
     width: 6rem;
@@ -51,6 +55,29 @@ h3{
 .title{
     height: 40rem;
 }
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 @media screen and (max-width:1024px){
     h1,h3  {
         font-size: 3rem;

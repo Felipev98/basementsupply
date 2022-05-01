@@ -1,6 +1,7 @@
 <template>
 <section class="item">
  <div class="container">
+     <div v-if="$store.state.isLoading" class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
       <div class="row" >
           <Card v-for="products in productss" :key="products.id" :products="products" class="card"/>
       </div>
@@ -26,9 +27,15 @@ export default {
     },
     methods: {
         async getProducts(){
-            const products = await EventService.getProducts();
-            this.productss = products.data;
-            
+            this.$store.commit('setIsLoading',true);
+            try {
+                    const products = await EventService.getProducts();
+                    this.productss = products.data;
+            } catch (error) {
+                
+            }finally{
+            this.$store.commit('setIsLoading',false)
+            }         
 }
         
     }
