@@ -12,7 +12,7 @@ _Front-End de una werb E-commerce siguiendo el diseño de [este figma](https://w
 ## Technologies 🛠️
 
 * Vue 
-* SASS
+* SCSS
 * Test Unitarios con Jest y Vue Test Utils.
 
 ## Features 📌
